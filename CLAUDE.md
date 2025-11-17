@@ -65,44 +65,31 @@ This project has **no automated testing or CI/CD**. All processes are manual:
 ## Project Structure
 
 ```
-永生/
-├── README.md                      # Main project overview (Chinese)
-├── README.en.md                   # English translation
+相空间拓展计划/
+├── README.md                      # Main project overview with three-dimensional framework
+├── AGENTS.md                      # Repository guidelines
+├── CLAUDE.md                      # Claude Code integration guide (this file)
 ├── Makefile                       # Build system (pandoc workflow)
 │
 ├── docs/                          # Core theoretical documentation
-│   ├── implementation_roadmap.md  # Detailed 5-phase execution plan (22KB)
-│   ├── 实践指南.md                # Implementation guide (12KB)
-│   ├── 人类 3.0 架构.md           # Modular neural architecture
-│   └── [Other theoretical documents]
-│
-├── kpi/                           # Key Performance Indicators
-│   └── 指标_baseline.yaml         # KPI baseline metrics (YAML format)
-│
-├── data/                          # Evidence & research database (structure ready, content pending)
-│   ├── evidence/                  # Evidence collection
-│   └── refs/                      # Reference materials
-│
-├── governance/                    # Ethics & governance framework
-│   ├── 神经权利与合规.md          # Neural rights & compliance
-│   └── 行星边界约束.md            # Planetary boundary constraints
-│
-├── audit/                         # Physical limits validation
-│   └── 物理极限审计.md            # Physical limits audit
-│
-├── prototypes/                    # Proof-of-concept directories (planned)
-│   ├── lev_evidence/              # Longevity Escape Velocity
-│   ├── bci_sandbox/               # Brain-Computer Interface
-│   └── energy_eff/                # Energy efficiency
-│
-├── reviews/                       # Peer review records
-│   └── 评审清单.md                # Review checklist
-│
-├── lesson/                        # Lessons learned from issues
-│   └── 文档体系重构_20251017_1105.md
+│   ├── implementation_roadmap.md  # Detailed 5-phase execution plan
+│   ├── 实践指南.md                # Implementation guide
+│   ├── 情绪建模与注入.md          # Emotion modeling and injection
+│   └── 可视化系统架构.mmd         # System architecture visualization (Mermaid)
 │
 ├── archives/                      # Historical documents
-│   └── original_docs/             # 40+ iterative development files
+│   └── 技术路线图对比分析.md      # Technical roadmap comparison analysis
+│
+├── data/                          # Evidence & research database (structure ready)
+│   ├── evidence/                  # Evidence collection (to be populated)
+│   └── refs/                      # Reference materials (to be populated)
+│
+├── out/                           # Build output directory (created by make)
+│   ├── report.html                # Generated HTML report
+│   └── report.pdf                 # Generated PDF report
+│
+├── .history/                      # VS Code local history (auto-generated)
+│   └── ...                        # Version backup files
 │
 └── .github/                       # GitHub configuration
     ├── ISSUE_TEMPLATE/            # Issue templates (bug, feature, question, data)
@@ -111,14 +98,12 @@ This project has **no automated testing or CI/CD**. All processes are manual:
 
 ### Directory Purpose Summary
 
-- **docs/**: Theoretical framework, white papers, roadmaps, guides
-- **kpi/**: Quantified success metrics for three dimensions
+- **docs/**: Theoretical framework, white papers, roadmaps, guides, and visualizations
+- **archives/**: Historical documentation from project evolution and comparison analyses
 - **data/**: Structured evidence database (mostly placeholders currently)
-- **governance/**: Ethical constraints and compliance frameworks
-- **audit/**: Physical law boundary validation
-- **prototypes/**: Future proof-of-concept code (empty now)
-- **lesson/**: Experience capture from problems encountered
-- **archives/**: Historical documentation from project evolution
+- **out/**: Generated build outputs (HTML/PDF reports)
+- **.history/**: VS Code auto-generated version backups (do not manually edit)
+- **.github/**: GitHub workflows, issue templates, and PR templates
 
 ---
 
@@ -503,5 +488,5 @@ CC BY 4.0 (Creative Commons Attribution 4.0) - All intellectual property is open
 
 ---
 
-**Last Updated**: 2025-10-18
-**For Questions**: Refer to GitHub Issues or `CONTRIBUTING.md`
+**Last Updated**: 2025-11-18
+**For Questions**: Refer to GitHub Issues or documentation in `docs/` directory
