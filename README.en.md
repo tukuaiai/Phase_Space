@@ -263,7 +263,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 | **1. Dissemination** | 6-18 months | Establish academic credibility | 🔄 Planned |
 | **2. Evidence Aggregation** | 18-36 months | Build technical evidence database | ⏳ Pending |
 | **3. Prototype Validation** | 3-5 years | Small-scale experiments | ⏳ Pending |
-| **4. Organization Building** | 5-10 years | Possibility Lab | ⏳ Pending |
+| **4. Organization Building** | 5-10 years | Phase Space Lab | ⏳ Pending |
 | **5. Technical Breakthrough** | 10-30 years | Substantive progress in at least one dimension | ⏳ Pending |
 
 ---
