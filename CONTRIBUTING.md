@@ -40,8 +40,8 @@
 ```bash
 # Fork仓库到你的账号
 # Clone到本地
-git clone https://github.com/YOUR_USERNAME/ys.git
-cd ys
+git clone https://github.com/tukuaiai/Phase_Space.git
+cd Phase_Space
 
 # 创建特性分支
 git checkout -b feature/your-feature-name
@@ -108,7 +108,7 @@ git push origin feature/your-feature-name
 有疑问? 可以通过以下方式联系:
 - 提交Issue
 - 加入Discord (待建立)
-- 发送邮件至 immortality@possibilism.org (待建立)
+- 发送邮件至 contact@phasespace.org (待建立)
 
 ## 🙏 致谢
 

@@ -72,7 +72,7 @@
 
 如有疑问或需要报告违规行为:
 - 提交 GitHub Issue (公开但可匿名)
-- 发送邮件至 immortality@possibilism.org (待建立)
+- 发送邮件至 contact@phasespace.org (待建立)
 
 ---
 

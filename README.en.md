@@ -2,7 +2,7 @@
 
 # 🌌 Phase Space Expansion
 
-**A Three-Dimensional Framework for Eliminating Scarcity**
+**A systematic framework for eliminating scarcity in Time, Cognition, and Energy, to approach the possibility frontier allowed by the laws of physics.**
 *From Finite Existence to Continuous Evolution*
 
 ---
@@ -321,13 +321,13 @@ Under the following terms:
 ## 💬 Contact
 
 - **GitHub**: [@tukuaiai](https://github.com/tukuaiai)
-- **Email**: immortality@possibilism.org (to be established)
-- **Discord**: Possibilism Hub (to be established)
-- **Twitter**: @PossibilismHub (to be established)
+- **Email**: contact@phasespace.org (to be established)
+- **Discord**: Phase Space Hub (to be established)
+- **Twitter**: @PhaseSpaceHub (to be established)
 
 ---
 
-## 🌈 Core Mantras
+## 🌈 Core Theses
 
 - *"Life is not a countdown, but an accumulator"*
 - *"True freedom is not about what you want to do, but how many possibilities exist"*
@@ -353,7 +353,7 @@ Special tribute to:
 
 **In humanity's great journey against scarcity, this may be the most honest, radical, and feasible philosophical guide.**
 
-*— The Phase Space Expansion Manifesto*
+*— A Vision of Phase Space Expansion*
 
 ---
 

@@ -1,43 +1,58 @@
-# Repository Guidelines
+# AI Agent Repository Guidelines
 
-## Project Structure & Module Organization
-- `docs/` — Core theoretical documentation (e.g., `docs/实践指南.md`, `docs/implementation_roadmap.md`, `docs/情绪建模与注入.md`).
-- `archives/` — Historical documents and archived materials (e.g., `archives/技术路线图对比分析.md`).
-- `data/{evidence,refs}/` — Datasets and references that back claims (structure ready, content pending).
-- `out/` — Build output directory for generated HTML/PDF reports (created by `make` command).
-- `.history/` — VS Code local history backups (auto-generated, not manually edited).
-- `.github/` — GitHub configuration, issue/PR templates, and CI/CD workflows.
-- Root files: `README.md`, `AGENTS.md`, `CLAUDE.md`, `Makefile` — Core project files.
+This document provides essential guidelines for AI agents contributing to this repository.
 
-## Build, Test, and Development Commands
-- `make` or `make all` — build complete documentation to `out/report.{html,pdf}` from source files in `docs/` (requires `pandoc` + `texlive-xetex`).
-- `make clean` — remove build artifacts in `out/`.
-- Verify `pandoc` availability: `pandoc -v`.
-- Open result locally: `out/report.html`.
-- No automated tests - manually verify documentation builds and renders correctly.
+---
 
-## Coding Style & Naming Conventions
-- Markdown: ATX headings (`#`), one H1 per file, Title Case for H1/H2.
-- Lists and code blocks: use fenced blocks with language hints.
-- File names: keep existing names; for new dated docs prefer `topic_YYYY-MM-DD.md` or `主题_YYYYMMDD.md`.
-- YAML/JSON: 2‑space indentation. Makefile recipes must use tabs.
+## 1. Project Structure
 
-## Testing Guidelines
-- A change is “green” when `make` succeeds and outputs both HTML/PDF.
-- For substantial docs, manually check headings, tables, links, and images render.
-- If adding datasets, include a short README in the same folder describing schema and source.
+The repository is organized as a "documentation-as-code" project. Key directories include:
 
-## Commit & Pull Request Guidelines
-- Commit messages: imperative mood, concise subject (≤72 chars), body with why/what/impact.
-- Group related changes; avoid mixed doc/data/logical changes in one commit.
-- Use `.github/pull_request_template.md`; link issues (e.g., `Fixes #123`).
-- Include before/after screenshots for visual changes; update `CHANGELOG.md` for user‑visible updates.
+-   `docs/`: Core theoretical documentation (whitepapers, roadmaps, guides).
+-   `archives/`: Historical documents, audit frameworks, and review checklists.
+-   `data/`: Data templates, references, and evidence supporting the research.
+-   `out/`: Build output directory for generated reports (HTML, PDF).
+-   `.github/`: Issue templates, PR templates, and other GitHub-specific configurations.
+-   **Root Files**: `README.md`, `Makefile`, and agent-specific guides like this one.
 
-## Security & Agent Notes
-- Do not commit secrets or private data. Redact PII in `archives/`.
-- Agents and contributors: keep patches minimal, avoid renames that break links, prefer adding over rewriting. When uncertain, open an Issue before large moves.
+---
+
+## 2. Build, Test, and Development
+
+-   **Build Command**: `make all`
+    -   This command uses `pandoc` to compile source documents (primarily from `docs/`) into final report formats (`out/report.html`, `out/report.pdf`).
+    -   **Requires**: `pandoc`, `make`, `texlive-xetex`.
+-   **Clean Command**: `make clean`
+    -   Removes all build artifacts from the `out/` directory.
+-   **Testing**:
+    -   A change is considered successful if `make all` completes without errors.
+    -   For significant changes, manually inspect the generated `out/report.html` to ensure all content (headings, tables, links, images) renders correctly.
+
+---
+
+## 3. Contribution & Style Conventions
+
+### Coding & Naming
+-   **Markdown**: Use standard GitHub Flavored Markdown (GFM). Use ATX headings (`#`) and ensure a logical heading hierarchy.
+-   **File Naming**: Preserve existing file names. For new documents, use a descriptive name, preferably in English with `_` as a separator (e.g., `new_concept_paper.md`). If the document is a direct translation, use the `_zh` suffix (e.g., `document_name_zh.md`).
+-   **YAML/JSON**: Use 2-space indentation.
+-   **Makefile**: All recipe lines **must** use tabs, not spaces.
+
+### Commits & Pull Requests
+-   **Commit Messages**: Write clear and concise commit messages. The subject line should be in the imperative mood (e.g., "Update" not "Updated"). The body should explain the "what" and "why" of the change.
+-   **Atomic Commits**: Group related changes into a single, logical commit.
+-   **Pull Requests**: Use the provided PR template in `.github/`. If the PR addresses an issue, link it (e.g., `Fixes #123`).
+
+---
+
+## 4. General Agent Guidelines
+
+-   **Safety First**: Do not commit secrets, API keys, or any personally identifiable information (PII).
+-   **Minimize Scope**: Keep changes minimal and focused on the requested task. Avoid unnecessary refactoring or file renames that could break internal links.
+-   **Prefer Adding over Rewriting**: When possible, add new, well-structured content rather than completely rewriting existing documents, unless specifically instructed.
+-   **When in Doubt, Ask**: If a requested change is ambiguous or seems to conflict with project principles, open an Issue to ask for clarification before proceeding with major changes.
 
 ---
 
 **Last Updated**: 2025-11-18
-**Repository**: https://github.com/tukuaiai/Phase_Space_Expansion
+**Repository**: https://github.com/tukuaiai/Phase_Space
